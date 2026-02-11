@@ -1,10 +1,23 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  fig.width = 6,
+  fig.retina = 3,
+  out.width = "100%"
+)
+```
+
 # ggsegBuckner
 
-> **Work in Progress** — This package is under active development and
-> has not yet been officially released.
+> **Work in Progress** — This package is under active development and has not yet been officially released.
 
 Buckner cerebellar functional parcellation for the ggseg ecosystem.
 
@@ -18,10 +31,8 @@ pak::pak("ggseg/ggsegBuckner")
 ```
 
 ## 7-network parcellation
-
-``` r
+```{r "buckner7"}
 library(ggseg)
-#> Loading required package: ggseg.formats
 library(ggsegBuckner)
 library(ggplot2)
 
@@ -37,11 +48,8 @@ ggplot() +
   ggtitle("Buckner 7-network cerebellar parcellation")
 ```
 
-<img src="man/figures/README-buckner7-1.png" alt="" width="100%" />
-
 ## 17-network parcellation
-
-``` r
+```{r "buckner17"}
 ggplot() +
   geom_brain(
     atlas = buckner17,
@@ -54,16 +62,14 @@ ggplot() +
   ggtitle("Buckner 17-network cerebellar parcellation")
 ```
 
-<img src="man/figures/README-buckner17-1.png" alt="" width="100%" />
-
 ## Reference
 
-Buckner RL et al. (2011). The organization of the human cerebellum
-estimated by intrinsic functional connectivity. *Journal of
-Neurophysiology*, 106(5), 2322-2345.
+Buckner RL et al. (2011). The organization of the human cerebellum estimated
+by intrinsic functional connectivity. *Journal of Neurophysiology*, 106(5),
+2322-2345.
 
 ## Code of Conduct
 
 Please note that the ggsegBuckner project is released with a
-[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
-this project, you agree to abide by its terms.
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this
+project, you agree to abide by its terms.
