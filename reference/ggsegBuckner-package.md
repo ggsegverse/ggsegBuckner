@@ -9,9 +9,9 @@ polygon geometry and 3D vertex indices, for use with 'ggseg' and
 
 Useful links:
 
-- <https://github.com/ggseg/ggsegBuckner>
+- <https://github.com/ggsegverse/ggsegBuckner>
 
-- Report bugs at <https://github.com/ggseg/ggsegBuckner/issues>
+- Report bugs at <https://github.com/ggsegverse/ggsegBuckner/issues>
 
 ## Author
 
