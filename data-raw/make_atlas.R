@@ -1,16 +1,12 @@
-library(dplyr)
-library(ggsegExtra)
+library(ggseg.extra)
 library(ggseg.formats)
 
-future::plan(future::multisession(workers = 4))
-progressr::handlers("cli")
-progressr::handlers(global = TRUE)
 
 # -- 7 Networks ----------------------------------------------------------------
 
 cli::cli_h1("Creating Buckner 7 Networks atlas")
 
-buckner7_raw <- create_subcortical_atlas(
+buckner7_raw <- create_subcortical_from_volume(
   input_volume = here::here("data-raw", "Buckner2011_7Networks_MNI152_FreeSurferConformed1mm_LooseMask.nii.gz"),
   input_lut = here::here("data-raw", "Buckner2011_7Networks_ColorLUT.txt"),
   atlas_name = "buckner7",
@@ -32,7 +28,7 @@ print(buckner7)
 
 cli::cli_h1("Creating Buckner 17 Networks atlas")
 
-buckner17_raw <- create_subcortical_atlas(
+buckner17_raw <- create_subcortical_from_volume(
   input_volume = here::here("data-raw", "Buckner2011_17Networks_MNI152_FreeSurferConformed1mm_LooseMask.nii.gz"),
   input_lut = here::here("data-raw", "Buckner2011_17Networks_ColorLUT.txt"),
   atlas_name = "buckner17",
