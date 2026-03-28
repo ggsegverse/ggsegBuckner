@@ -30,24 +30,5 @@ Other ggseg_atlases:
 
 ``` r
 buckner7()
-#> 
-#> ── buckner7 ggseg atlas ────────────────────────────────────────────────────────
-#> Type: subcortical
-#> Regions: 7
-#> Hemispheres: NA
-#> Views: axial_1, coronal_1, sagittal, axial_2, axial_3, coronal_2
-#> Palette: ✔
-#> Rendering: ✔ ggseg
-#> ✔ ggseg3d (meshes)
-#> ────────────────────────────────────────────────────────────────────────────────
-#> # A tibble: 7 × 3
-#>   hemi  region      label      
-#>   <chr> <chr>       <chr>      
-#> 1 NA    7networks 1 7Networks_1
-#> 2 NA    7networks 2 7Networks_2
-#> 3 NA    7networks 3 7Networks_3
-#> 4 NA    7networks 4 7Networks_4
-#> 5 NA    7networks 5 7Networks_5
-#> 6 NA    7networks 6 7Networks_6
-#> 7 NA    7networks 7 7Networks_7
+#> Error in buckner7(): object '.buckner7' not found
 ```
