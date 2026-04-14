@@ -18,6 +18,7 @@ for (nm in c("buckner7", "buckner17")) {
 
     it("renders with ggseg3d", {
       skip_if_not_installed("ggseg3d")
+      skip_if_not_installed("ggseg.meshes")
       p <- ggseg3d::ggseg3d(atlas = atlas)
       expect_s3_class(p, c("plotly", "htmlwidget"))
     })
