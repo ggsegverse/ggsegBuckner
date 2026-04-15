@@ -7,7 +7,10 @@ library(ggseg.formats)
 cli::cli_h1("Creating Buckner 7 Networks atlas")
 
 buckner7_raw <- create_subcortical_from_volume(
-  input_volume = here::here("data-raw", "Buckner2011_7Networks_MNI152_FreeSurferConformed1mm_LooseMask.nii.gz"),
+  input_volume = here::here(
+    "data-raw",
+    "Buckner2011_7Networks_MNI152_FreeSurferConformed1mm_LooseMask.nii.gz"
+  ),
   input_lut = here::here("data-raw", "Buckner2011_7Networks_ColorLUT.txt"),
   atlas_name = "buckner7",
   output_dir = "data-raw/buckner7",
@@ -29,7 +32,10 @@ print(buckner7)
 cli::cli_h1("Creating Buckner 17 Networks atlas")
 
 buckner17_raw <- create_subcortical_from_volume(
-  input_volume = here::here("data-raw", "Buckner2011_17Networks_MNI152_FreeSurferConformed1mm_LooseMask.nii.gz"),
+  input_volume = here::here(
+    "data-raw",
+    "Buckner2011_17Networks_MNI152_FreeSurferConformed1mm_LooseMask.nii.gz"
+  ),
   input_lut = here::here("data-raw", "Buckner2011_17Networks_ColorLUT.txt"),
   atlas_name = "buckner17",
   output_dir = "data-raw/buckner17",
