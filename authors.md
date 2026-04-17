@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/ggsegverse/ggsegBuckner/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/ggsegverse/ggsegBuckner/blob/v1.0.0/DESCRIPTION)
 
 Mowinckel A (2026). *ggsegBuckner: Buckner Cerebellar Functional
 Parcellation for the 'ggseg' Ecosystem*. R package version 1.0.0,
