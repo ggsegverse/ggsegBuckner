@@ -4,6 +4,7 @@
 #' Buckner et al. (2011). Contains 2D polygon geometry and 3D meshes.
 #'
 #' @family ggseg_atlases
+#' @family cerebellar_atlases
 #'
 #' @references Buckner RL et al. (2011). The organization of the human
 #'   cerebellum estimated by intrinsic functional connectivity.
@@ -21,6 +22,7 @@ buckner7 <- function() .buckner7
 #' Buckner et al. (2011). Contains 2D polygon geometry and 3D meshes.
 #'
 #' @family ggseg_atlases
+#' @family cerebellar_atlases
 #'
 #' @references Buckner RL et al. (2011). The organization of the human
 #'   cerebellum estimated by intrinsic functional connectivity.

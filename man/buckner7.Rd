@@ -24,5 +24,9 @@ cerebellum estimated by intrinsic functional connectivity.
 \seealso{
 Other ggseg_atlases: 
 \code{\link{buckner17}()}
+
+Other cerebellar_atlases: 
+\code{\link{buckner17}()}
 }
+\concept{cerebellar_atlases}
 \concept{ggseg_atlases}

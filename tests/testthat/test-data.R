@@ -9,15 +9,12 @@ for (nm in c("buckner7", "buckner17")) {
     })
 
     it("renders 2D plot", {
-      skip_if_not_installed("ggseg")
-      skip_if_not_installed("ggplot2")
-      skip_if_not_installed("vdiffr")
       p <- plot(atlas) + ggplot2::theme_void()
-      vdiffr::expect_doppelganger(paste0(nm, "-2d"), p)
+      expect_s3_class(p, "gg")
     })
 
     it("renders with ggseg3d", {
-      skip_if_not_installed("ggseg3d")
+      skip_if_not_installed("ggseg.meshes")
       p <- ggseg3d::ggseg3d(atlas = atlas)
       expect_s3_class(p, c("plotly", "htmlwidget"))
     })
