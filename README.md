@@ -4,8 +4,11 @@
 
 # ggsegBuckner
 
-> **Work in Progress** – This package is under active development and
-> has not yet been officially released.
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ggsegverse/ggsegBuckner/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegBuckner/actions/workflows/R-CMD-check.yaml)
+[![r-universe](https://ggseg.r-universe.dev/badges/ggsegBuckner.png)](https://ggseg.r-universe.dev/ggsegBuckner)
+<!-- badges: end -->
 
 Buckner cerebellar functional parcellation for the ggseg ecosystem.
 
@@ -27,7 +30,7 @@ You can install this package from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
-pak::pak("ggseg/ggsegBuckner")
+pak::pak("ggsegverse/ggsegBuckner")
 ```
 
 ## 7-network parcellation
@@ -45,8 +48,7 @@ ggplot() +
     show.legend = FALSE
   ) +
   scale_fill_manual(values = buckner7()$palette, na.value = "grey") +
-  theme_void() +
-  ggtitle("Buckner 7-network cerebellar parcellation")
+  theme_void()
 ```
 
 <img src="man/figures/README-buckner7-1.png" style="width:100.0%" />
@@ -62,20 +64,13 @@ ggplot() +
     show.legend = FALSE
   ) +
   scale_fill_manual(values = buckner17()$palette, na.value = "grey") +
-  theme_void() +
-  ggtitle("Buckner 17-network cerebellar parcellation")
+  theme_void()
 ```
 
 <img src="man/figures/README-buckner17-1.png" style="width:100.0%" />
 
-## Reference
+## Data source
 
 Buckner RL et al. (2011). The organization of the human cerebellum
 estimated by intrinsic functional connectivity. *Journal of
 Neurophysiology*, 106(5), 2322-2345.
-
-## Code of Conduct
-
-Please note that the ggsegBuckner project is released with a
-[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
-this project, you agree to abide by its terms.
