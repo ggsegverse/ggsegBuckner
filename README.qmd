@@ -54,6 +54,7 @@ pak::pak("ggsegverse/ggsegBuckner")
 ```{r}
 #| label: buckner7
 library(ggseg)
+library(ggsegBuckner)
 
 plot(buckner7())
 ```
