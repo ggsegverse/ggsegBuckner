@@ -35,18 +35,8 @@ pak::pak("ggseg/ggsegBuckner")
 ``` r
 library(ggseg)
 library(ggsegBuckner)
-library(ggplot2)
 
-ggplot() +
-  geom_brain(
-    atlas = buckner7(),
-    mapping = aes(fill = label),
-    position = position_brain(. ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = buckner7()$palette, na.value = "grey") +
-  theme_void() +
-  ggtitle("Buckner 7-network cerebellar parcellation")
+plot(buckner7())
 ```
 
 <img src="man/figures/README-buckner7-1.png" style="width:100.0%" />
@@ -54,16 +44,7 @@ ggplot() +
 ## 17-network parcellation
 
 ``` r
-ggplot() +
-  geom_brain(
-    atlas = buckner17(),
-    mapping = aes(fill = label),
-    position = position_brain(. ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = buckner17()$palette, na.value = "grey") +
-  theme_void() +
-  ggtitle("Buckner 17-network cerebellar parcellation")
+plot(buckner17())
 ```
 
 <img src="man/figures/README-buckner17-1.png" style="width:100.0%" />
