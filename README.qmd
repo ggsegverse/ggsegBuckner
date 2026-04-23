@@ -55,32 +55,15 @@ pak::pak("ggsegverse/ggsegBuckner")
 #| label: buckner7
 library(ggseg)
 library(ggsegBuckner)
-library(ggplot2)
 
-ggplot() +
-  geom_brain(
-    atlas = buckner7(),
-    mapping = aes(fill = label),
-    position = position_brain(. ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = buckner7()$palette, na.value = "grey") +
-  theme_void()
+plot(buckner7())
 ```
 
 ## 17-network parcellation
 
 ```{r}
 #| label: buckner17
-ggplot() +
-  geom_brain(
-    atlas = buckner17(),
-    mapping = aes(fill = label),
-    position = position_brain(. ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = buckner17()$palette, na.value = "grey") +
-  theme_void()
+plot(buckner17())
 ```
 
 ## Data source
