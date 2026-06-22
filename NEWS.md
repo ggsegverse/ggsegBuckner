@@ -1,3 +1,10 @@
+# ggsegBuckner 1.0.1
+
+- Atlas 2D geometry migrated to the sf-optional `brain_polygons` format
+  (`ggseg.formats` 0.0.3). The atlases now render without `sf` and its
+  GDAL/GEOS/PROJ system libraries, enabling wasm and air-gapped installs.
+  Plots are unchanged.
+
 # ggsegBuckner 1.0.0
 
 * Initial release with `buckner7` and `buckner17` cerebellar atlases as
