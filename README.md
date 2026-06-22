@@ -1,5 +1,3 @@
-
-
 <!-- README.md is generated from README.qmd. Please edit that file -->
 
 # ggsegBuckner
@@ -8,7 +6,16 @@
 
 [![R-CMD-check](https://github.com/ggsegverse/ggsegBuckner/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegBuckner/actions/workflows/R-CMD-check.yaml)
 [![r-universe](https://ggseg.r-universe.dev/badges/ggsegBuckner.png)](https://ggseg.r-universe.dev/ggsegBuckner)
+
 <!-- badges: end -->
+
+> [!IMPORTANT]
+> **ggsegBuckner is deprecated and has been archived.** The Buckner 2011
+> cerebellar parcellations (`buckner7`, `buckner17`) are now provided — as
+> proper `cerebellar`-type atlases — by
+> [**ggsegCerebellum**](https://github.com/ggsegverse/ggsegCerebellum),
+> together with additional cerebellar atlases (MDTB, Ji, Nettekoven, Xue).
+> Please use ggsegCerebellum instead.
 
 Buckner cerebellar functional parcellation for the ggseg ecosystem.
 
@@ -17,7 +24,7 @@ Buckner cerebellar functional parcellation for the ggseg ecosystem.
 We recommend installing the ggseg-atlases through the ggseg
 [r-universe](https://ggseg.r-universe.dev/ui#builds):
 
-``` r
+```r
 options(repos = c(
   ggseg = "https://ggseg.r-universe.dev",
   CRAN = "https://cloud.r-project.org"
@@ -28,14 +35,14 @@ install.packages("ggsegBuckner")
 
 You can install this package from [GitHub](https://github.com/) with:
 
-``` r
+```r
 # install.packages("pak")
 pak::pak("ggsegverse/ggsegBuckner")
 ```
 
 ## 7-network parcellation
 
-``` r
+```r
 library(ggseg)
 library(ggsegBuckner)
 
@@ -46,7 +53,7 @@ plot(buckner7())
 
 ## 17-network parcellation
 
-``` r
+```r
 plot(buckner17())
 ```
 
@@ -55,5 +62,5 @@ plot(buckner17())
 ## Data source
 
 Buckner RL et al. (2011). The organization of the human cerebellum
-estimated by intrinsic functional connectivity. *Journal of
-Neurophysiology*, 106(5), 2322-2345.
+estimated by intrinsic functional connectivity. _Journal of
+Neurophysiology_, 106(5), 2322-2345.

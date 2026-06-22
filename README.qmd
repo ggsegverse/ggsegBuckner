@@ -24,6 +24,14 @@ knitr::opts_chunk$set(
 [![r-universe](https://ggseg.r-universe.dev/badges/ggsegBuckner)](https://ggseg.r-universe.dev/ggsegBuckner)
 <!-- badges: end -->
 
+> [!IMPORTANT]
+> **ggsegBuckner is deprecated and has been archived.** The Buckner 2011
+> cerebellar parcellations (`buckner7`, `buckner17`) are now provided — as
+> proper `cerebellar`-type atlases — by
+> [**ggsegCerebellum**](https://github.com/ggsegverse/ggsegCerebellum),
+> together with additional cerebellar atlases (MDTB, Ji, Nettekoven, Xue).
+> Please use ggsegCerebellum instead.
+
 Buckner cerebellar functional parcellation for the ggseg ecosystem.
 
 ## Installation
